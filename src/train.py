@@ -72,7 +72,7 @@ def train_fn(loader, model, optimizer, loss_fn, scaler):
     return np.average(loss_history)
 
 def main():
-
+    print('STARTING THE MODEL...')
     model = UNET2D(in_channels=1, out_channels=1).to(DEVICE)
 
     loss_fn1 = nn.BCEWithLogitsLoss()
