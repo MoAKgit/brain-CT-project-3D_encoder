@@ -43,8 +43,8 @@ def train_fn(loader, model, optimizer, loss_fn, scaler):
         pred = model(data)
         loss = loss_fn(pred, targets)
         
-        print('\n1111111111111',torch.max(pred))
-        print('\n2222222222222',torch.min(pred))
+        # print('\n1111111111111',torch.max(pred))
+        # print('\n2222222222222',torch.min(pred))
         
         # forward
         # with torch.cuda.amp.autocast():
